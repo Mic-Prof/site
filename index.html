@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Digistart - Découvrir la programmation</title>
+
+	<!-- Swiperjs (https://swiperjs.com/get-started) -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+	<!-- Mon style css -->
+	<link rel="stylesheet" href="css/main.css"> <!--{{ url_for('static', filename= 'css/style.css') }}-->
+
+</head>
+<body>
+
+	<!-- -------------------------- -->
+	<!-- Bloc Titre, texte et image -->
+	<!-- -------------------------- -->
+	
+	<section class="header">
+			
+			<img src="https://picsum.photos/id/2/400/400" alt="Une image aléatoire">
+			
+			<div>
+				
+				<h1>Digistart</h1>
+				<h2>Découvrir la programmation web</h2>
+
+				<p>Vous passez des heures devant votre ordinateur?<br>
+				Vous hésitez à vous lancer dans une formation en programmation?<br>
+				Vous voulez savoir si vous êtes capable de développer un site web ou une application?<br>
+				Et vous, Mesdames? Osez ! L’informatique n’est pas un métier réservé aux hommes !</p>
+				<p><strong>Bienvenue dans cette découverte du fabuleux monde du développement informatique !</strong></p>
+
+			</div>
+
+	</section>
+
+	<!-- ------------- -->
+	<!-- Bloc css flex -->
+	<!-- ------------- -->
+
+	<section class="formations">
+
+			<article>
+				<img src="https://picsum.photos/400/300?random=1" alt="Une image aléatoire">
+				<h3>HTML</h3>
+			</article>
+
+			<article>
+				<img src="https://picsum.photos/400/300?random=2" alt="Une image aléatoire">
+				<h3>CSS</h3>
+			</article>
+
+			<article>
+				<img src="https://picsum.photos/400/300?random=3" alt="Une image aléatoire">
+				<h3>Javascript</h3>
+			</article>
+
+			<article>
+				<img src="https://picsum.photos/400/300?random=4" alt="Une image aléatoire">
+				<h3>PHP</h3>
+				<form action="https://www.pythonanywhere.com/user/Chimenry/files/home/Chimenry/paul_max2.py" method="post">
+					<input type="submit" name="action" value="test">
+
+				</form>
+			</article>
+
+			<article>
+				<img src="https://picsum.photos/400/300?random=5" alt="Une image aléatoire">
+				<h3>MySQL & Base de données</h3>
+			</article>
+
+			<article>
+				<img src="https://picsum.photos/400/300?random=6" alt="Une image aléatoire">
+				<h3>Web design & Figma</h3>
+			</article>
+		
+	</section>
+
+	<!-- ------------- -->
+	<!-- Bloc Swiperjs -->
+	<!-- ------------- -->
+
+	<!-- Slider main container -->
+	<section class="swiper">
+		
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide"><img src="https://picsum.photos/1600/500?random=7" alt="Une image aléatoire"></div>
+			<div class="swiper-slide"><img src="https://picsum.photos/1600/500?random=8" alt="Une image aléatoire"></div>
+			<div class="swiper-slide"><img src="https://picsum.photos/1600/500?random=9" alt="Une image aléatoire"></div>
+		</div>
+
+		<!-- Pagination -->
+		<div class="swiper-pagination"></div>
+
+		<!-- Navigation buttons -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+
+	</section>
+
+	<!-- ------------ -->
+	<!-- Bloc "Suite" -->
+	<!-- ------------ -->
+
+	<section class="suite">
+		<h3>Alors... prêt(e) pour la suite ? :)</h3>
+		<p>C'est par ici que ça se passe : <a href="https://www.facebook.com/Asbl.Proforma/">vers le FB de Proforma</a></p>
+	</section>
+
+	<!-- -------------- -->
+	<!-- Bloc copyright -->
+	<!-- -------------- -->
+
+	<footer>
+		<small>© Proforma 2024</small>
+	</footer>
+
+	<!-- ------------------------ -->
+	<!-- Inclusion des scripts JS -->
+	<!-- ------------------------ -->
+
+	<!-- Swiperjs (https://swiperjs.com/get-started) -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- Script du site -->
+	<script type="text/javascript" src="js/scripts.js"></script> {{ url_for('static', filename= 'js/scripts.js') }}
+
+</body>
+</html>
