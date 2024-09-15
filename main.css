@@ -1,0 +1,133 @@
+
+/* ---------- */
+/* CSS global */
+/* ---------- */
+
+	/* En changeant la police de caractère sur le body, elle se change sur tous les éléments "enfants" */
+	body {
+		font-family: 'Helvetica', sans-serif;
+		margin: 0;
+	}
+
+	/* On précise la largeur d'une section, et on met de l'espace entre chaque section */
+	section {
+		width: 90%;
+
+		margin-top: 100px;
+		margin-bottom: 100px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+/* ---------------------------- */
+/* Bloc "Titre, texte et image" */
+/* ---------------------------- */
+
+	/* On met les blocs l'un à côté de l'autre	*/
+	section.header img,
+	section.header div {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	/* On met un peu d'espace à droite de l'image */
+	section.header img {
+		margin-right: 50px;
+	}
+
+	/* On met un sytle sur le titre principal */
+	section.header h1 {
+		font-size: 48px;
+		text-transform: uppercase;
+
+		margin-bottom: 0;
+	}
+
+	/* On met un sytle sur le sous-titre */
+	section.header h2 {
+		font-size: 36px;
+		font-weight: 400;
+		color: #d3434c;
+
+		margin-top: 0;
+	}
+
+	/* On met un sytle sur le paragraphe */
+	section.header p {
+		line-height: 1.5;
+	}
+
+/* ---------- */
+/* Formations */
+/* ---------- */
+
+	/* On met un sytle sur le bloc des formations */
+	section.formations {
+		/* Couleur de fond */
+		background-color: #fce7e6;
+
+		/* Espace en haut et en bas (dans le bloc) */
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		/* Gestion du flex (https://css-tricks.com/snippets/css/a-guide-to-flexbox/) */
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	/* On met un style sur chaque article	*/
+	section.formations article {
+		background: white;
+		border-radius: 10px;
+		box-shadow: 0 0 5px #ccc;
+
+		margin-bottom: 50px;
+	}
+
+	/* On met un style sur chaque image de l'article	*/
+	section.formations article img {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	/* On met un style sur chaque sous-titre de l'article	*/
+	section.formations article h3 {
+		padding-left: 20px;
+		font-weight: 400;
+	}
+
+/* -------- */
+/* Swiperjs */
+/* -------- */
+
+	/* On  fixe la hauteur de la boite */
+	section.swiper {
+		height: 500px;
+	}
+
+/* -------- */
+/* Suite */
+/* -------- */
+
+	/* On met un style sur le bloc et le texte	*/
+	section.suite {
+		text-align: center;
+	}
+
+	section.suite h3 {
+		font-size: 36px;
+	}
+
+/* ------ */
+/* Footer */
+/* ------ */
+
+	footer {
+		background-color: #d3434c;
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		
+		padding: 10px;
+	}
